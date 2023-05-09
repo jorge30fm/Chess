@@ -70,3 +70,9 @@ body {
     background-position: center;
     cursor: pointer;
   }
+  [data-color="white"] {
+    filter: drop-shadow(0 0 7px rgba(52, 52, 52, 0.9));
+  }
+  [data-color="black"] {
+    filter: drop-shadow(0 0 7px rgba(160, 160, 160, 0.9));
+  }
