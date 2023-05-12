@@ -30,8 +30,14 @@ body {
     width: calc(100% / 8);
     height: 100%;
     box-sizing: border-box;
+    
 
   }
+  .highlight {
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: red !important
+  }
+
   
   [data-row="1"] .square:nth-child(odd),
   [data-row="2"] .square:nth-child(even),
@@ -69,10 +75,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    transition: all .3s ease-in-out;
   }
+  .piece.moving 
   [data-color="white"] {
     filter: drop-shadow(0 0 7px rgba(52, 52, 52, 0.9));
   }
   [data-color="black"] {
     filter: drop-shadow(0 0 7px rgba(160, 160, 160, 0.9));
   }
+ 
